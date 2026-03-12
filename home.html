@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GRIT VG Dashboard</title>
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif; background-color: #f4f6f8; color: #20232a; }
+    .tabs { display: flex; justify-content: space-between; background: #ffffff; border-bottom: 1px solid #d1d5db; position: sticky; top: 0; z-index: 20; padding: 0.4rem 1rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .tab { color: #334155; text-decoration: none; font-weight: 600; padding: 0.65rem 0.9rem; border-radius: 6px; cursor: pointer; transition: background 0.2s, color 0.2s; }
+    .tab:hover { background: #eff6ff; color: #1d4ed8; }
+    .tab.active { background: #1d4ed8; color: #ffffff; }
+    .wrapper { max-width: auto; margin: 0 auto; padding: 1rem; }
+    h1 { margin-bottom: 0.5rem; }
+    .description { margin-bottom: 1rem; color: #444; }
+    .embed-container { position: relative; width: 100%; padding-bottom: 56.25%; background: #fff; box-shadow: 0 3px 12px rgba(0,0,0,0.08); border-radius: 8px; overflow: hidden; }
+    .embed-container iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .instructions { font-size: 0.9rem; color: #555; margin-top: 0.8rem; }
+    .tab-page { display: none; background: #ffffff; border: 1px solid #d1d5db; border-radius: 8px; padding: 1rem; margin-top: 1rem; }
+    .tab-page.active { display: block; }
+    .page-header { display: flex; align-items: center; justify-content: space-between; background: #2069e9; border-bottom: 1px solid #d1d5db; padding: 0.45rem 1rem; position: sticky; top: 0; z-index: 30; }
+    .page-header .logo img { max-height: 60px; max-width: 120px; object-fit: contain; }
+    .page-header .header-text { flex: 1; text-align: center; font-weight: 700; font-size: 1.5rem; color: #ffffff; }
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="logo"><img src="img/images-logo.png" alt="Left Logo" /></div>
+    <div class="header-text">Gujarat Rajya Institution for Transformation<br><span style="font-size:0.9rem; color:#fefeff; font-weight:700;">Vikasit Gujarat Strategy Room Dashboards</span></div>
+    <div class="logo"><img src="img/emblem.png" alt="Right Logo" /></div>
+  </div>
+  <div class="tabs">
+    <div class="tab active" data-page="MacroGoals">Macro Goals</div>
+    <div class="tab" data-page="WCD">WCD</div>
+    <div class="tab" data-page="R_B">R&B</div>
+    <div class="tab" data-page="WSD">WSD</div>
+    <div class="tab" data-page="F_E">F&E</div>
+    <div class="tab" data-page="EPD">EPD</div>
+    <div class="tab" data-page="DST">DST</div>
+  </div>
+  <div class="tabs" style="margin-top:0;">
+    <div class="tab" data-page="WRD">WRD</div>    
+    <div class="tab" data-page="Skills">Skills</div>
+    <div class="tab" data-page="UDD">UDD</div>
+    <div class="tab" data-page="Education">Education</div>
+    <div class="tab" data-page="Health">Health</div>
+    <div class="tab" data-page="DAH">DAH</div>
+  </div>
+
+  <div class="wrapper">   
+
+
+    <div id="WRD" class="tab-page">
+      <h2>Water Resources Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYWUwNDhlYTAtNjMxYi00MDcwLTg5ZDktOWM3MGM5YTJjNmE4IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="WCD" class="tab-page">
+      <h2>Women & Child Development Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYTdiODA2M2YtYmM3Ny00YzNmLTkzY2YtNjExMmZjOGIwZmY5IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="R_B" class="tab-page">
+      <h2>Roads and Buildings Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZjIyZTA1MjUtYTk4Yi00MjQ5LTk0NWItZjc3OGQ1ZWRlMmM0IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="WSD" class="tab-page">
+      <h2>Water Supply Department Dashboard</h2>
+      <div class="embed-container" style="margin-top:0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTk5MzY5OTQtZTY3My00N2MyLTk1N2QtM2ZkNWQ0ZTBhMTk2IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="F_E" class="tab-page">
+      <h2>Forest & Environment Department Dashboard</h2>
+      <div class="embed-container" style="margin-top:0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZDQwZWM2ZmItMjllYS00ZDYwLWFjODQtNjFhZmQ3NWE5ODMyIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="EPD" class="tab-page">
+      <h2>Energy and Petrochemicals Department Dashboard</h2>
+      <div class="embed-container" style="margin-top:0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzg3NTYwM2UtNzIxNC00NWE4LTk1NDUtYzY3ZDlmYWEwNzE1IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+
+    <div id="MacroGoals" class="tab-page active">
+      <h2>Macro Goals Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiODM4ODY2ZDMtOTBiZi00ODAyLWI4NGEtZWEzNjBhZWVjMTJkIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="DST" class="tab-page">
+      <h2>Department of Science and Technology Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiYzliNzRkM2QtMzc2OS00ZjM4LTg5NmQtZTQxNjhmNWYyOWRlIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="Skills" class="tab-page">
+      <h2>Skills Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNzAxZDY0NmYtMDkyMi00ZWJiLTljMTYtMDdkMDBiNTQxZDIwIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="UDD" class="tab-page">
+      <h2>Urban Development Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMTI1ZjU2ZWItMzliMC00MmQ3LThjN2MtZTAwOThlOWM5ODU1IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="Education" class="tab-page">
+      <h2>Education Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiOTMzZDVmYWEtOTExZi00NWEyLTg4ODctNzQzOTk5NWRjMDNmIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="Health" class="tab-page">
+      <h2>Health Department Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiY2YwYzBmNDctYjk3NS00MjAzLWIyODktNjQ5ZTA1NzNlMmI4IiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+    <div id="DAH" class="tab-page">
+      <h2>Department of Animal Husbandry Dashboard</h2>
+      <div class="embed-container" style="margin-top: 0;">
+        <iframe src="https://app.powerbi.com/view?r=eyJrIjoiZTFjMmUxNzgtYzFhYi00NGZiLWE4MDItOTI5ZjMxYWNjMTUyIiwidCI6ImRjMmI3YzA5LWZmOTgtNDdhYy05ZDg3LWRlZWQwNmVlOGVkNiJ9" allowfullscreen="true"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const tabPages = document.querySelectorAll('.tab-page');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const selectedPageId = tab.dataset.page;
+
+        tabPages.forEach((page) => {
+          page.classList.toggle('active', page.id === selectedPageId);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
